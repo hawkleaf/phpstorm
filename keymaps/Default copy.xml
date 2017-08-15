@@ -1,0 +1,23 @@
+<keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
+  <action id="CloseActiveTab">
+    <keyboard-shortcut first-keystroke="shift meta w" />
+  </action>
+  <action id="FileChooser.TogglePathShowing" />
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="meta p" />
+  </action>
+  <action id="GotoTest" />
+  <action id="Images.ShowThumbnails" />
+  <action id="ParameterInfo" />
+  <action id="PreviousProjectWindow" />
+  <action id="QuickImplementations">
+    <keyboard-shortcut first-keystroke="meta y" />
+  </action>
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="meta t" />
+  </action>
+  <action id="Vcs.UpdateProject" />
+</keymap>

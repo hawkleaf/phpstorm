@@ -1,0 +1,38 @@
+<templateSet group="PHP">
+  <template name="unittest" value="&#10;namespace Tests\Unit;&#10;&#10;use Tests\DatabaseTestCase;&#10;&#10;class $fileName$ extends DatabaseTestCase&#10;{&#10;    /** @test */&#10;    public function $end$()&#10;    {&#10;        //Testing...&#10;    }&#10;}&#10;" description="Default Unit Test" toReformat="false" toShortenFQNames="true">
+    <variable name="fileName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="testmet" value="/** @test*/&#10;public function $end$()&#10;{&#10;    &#10;}" description="Test Method" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fractaltransformer" value="namespace Api\$model$\Http\Transformers;&#10;&#10;use League\Fractal\TransformerAbstract;&#10;&#10;class $name$ extends TransformerAbstract&#10;{&#10;    public $availableIncludes = [];&#10;    &#10;    public function transform($class$)&#10;    {&#10;        return [&#10;            $end$&#10;        ];&#10;    }&#10;}&#10;" description="A fractal Transformer" toReformat="false" toShortenFQNames="true">
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="featuretest" value="&#10;namespace Tests\Feature;&#10;&#10;use Tests\ApiTestCase;&#10;&#10;class $file$ extends ApiTestCase&#10;{&#10;    $END$&#10;}&#10;" description="Default Feature test" toReformat="false" toShortenFQNames="true">
+    <variable name="file" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="apirequest" value="namespace Api\$model$\Http\Requests;&#10;&#10;use Illuminate\Foundation\Http\FormRequest;&#10;&#10;class $file$ extends FormRequest&#10;{&#10;    /**&#10;     * Determine if the user is authorized to make this request.&#10;     *&#10;     * @return bool&#10;     */&#10;    public function authorize()&#10;    {&#10;        return true;&#10;    }&#10;&#10;    /**&#10;     * Get the validation rules that apply to the request.&#10;     *&#10;     * @return array&#10;     */&#10;    public function rules()&#10;    {&#10;        return [&#10;            $end$&#10;        ];&#10;    }&#10;}&#10;" description="A standard action request" toReformat="false" toShortenFQNames="true">
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="file" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
