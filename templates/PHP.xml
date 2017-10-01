@@ -35,4 +35,19 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="setMutator" value="public function set$ATTRIBUTE$Attribute($value)&#10;{&#10;    $this-&gt;attributes['$NAME$'] = $CURSOR$$value;&#10;}" description="Eloquent setter mutator" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="getMutator" value="public function get$ATTRIBUTE$Attribute($value)&#10;{&#10;    return $CURSOR$$value;&#10;}" description="Elquent getter mutator" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTRIBUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
